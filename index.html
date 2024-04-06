@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    
+</head>
+<body>
+    <header>
+        <div class="menu_side">
+            <h1>Playlist</h1>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Playlist</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Last Listening</h4>
+                <h4><span></span><i class="bi bi-music-note-beamed"></i>Recommended</h4>
+            </div>
+            <div class="menu_song">
+                <li class="songItem">
+                    <span>01</span>
+                    <img src="img/1.jpg" alt="beep song">
+                    <h5>
+                        Beep song
+                        <div class="subtitle">Simbu</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songItem">
+                    <span>02</span>
+                    <img src="img/2.jpg" alt="yaaraiyum">
+                    <h5>
+                        Yaaraiyum
+                        <div class="subtitle">Sulthan</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songItem">
+                    <span>03</span>
+                    <img src="img/3.jpg" alt="ava-yena">
+                    <h5>
+                        Ava ena
+                        <div class="subtitle">Vaaranam Aayiram</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songItem">
+                    <span>04</span>
+                    <img src="img/4.jpg" alt="Malare">
+                    <h5>
+                        Malare
+                        <div class="subtitle">Premam</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songItem">
+                    <span>05</span>
+                    <img src="img/5.jpg" alt=" Unnale Unnale">
+                    <h5>
+                        Unnale Unnale
+                        <div class="subtitle">Harris</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="5"></i>
+                </li>
+                
+                <li class="songItem">
+                    <span>06</span>
+                    <img src="img/6.jpg" alt="Muzumathi">
+                    <h5>
+                        Muzumathi
+                        <div class="subtitle">AR Rahman</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songItem">
+                    <span>07</span>
+                    <img src="img/7.jpg" alt="Oru Killi Oru Killi ">
+                    <h5>
+                        Oru Killi Oru Killi
+                        <div class="subtitle">Leelai</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="7"></i>
+                </li>
+                <li class="songItem">
+                    <span>08</span>
+                    <img src="img/8.jpg" alt="Melliname">
+                    <h5>
+                        Melliname
+                        <div class="subtitle">Shahjahan</div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="8"></i>
+                </li>
+                <li class="songItem">
+                    <span>09</span>
+                    <img src="img/9.jpg" alt=" Thaiyya Thaiyya">
+                    <h5>
+                        Thaiyya Thaiyya
+                        <div class="subtitle">Uyire </div>
+                    </h5>
+                        <i class="bi playListPlay bi-play-circle-fill" id="9"></i>
+                </li>
+                
+            </div>
+        </div>
+
+
+        <div class="song_side">
+            <nav>
+                <ul>
+                    <li>Discover <span></span></li>
+                    <li>My library</li>
+                    <li>Radio</li>
+
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music">
+                </div>
+                <div class="user">
+                    <img src="premam.jpg" alt="User" title="Tamizh">
+                </div>
+            </nav>
+            <div class="content">
+                <h1>Vibezz💥❤‍🔥- Tamizh</h1>
+                <p>
+                    Sad paatu venuma irukku.. Melodies venuma adhuvum irukku.. 
+                    <br>
+                    Vibe paatu venuma vibe irukku.. yellam mode kum paatu irukku..
+                </p>
+                <div class="buttons">
+                    <button id="playbutton">Play</button>
+                    <button id="follow">Follow</button>
+                </div>
+            </div>
+            <div class="popular_song">
+                <div class="h4">
+                    <h4>Popular songs</h4>
+                    <div class="btn">
+                        <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scroll" class="bi bi-arrow-right-short"></i> 
+                    </div>
+                </div>
+                <div class="pop_song">
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/10.jpg" alt="beep">
+                            <i class="bi playListPlay bi-play-circle-fill" id="10"></i>
+                        </div>
+                        <h5>
+                            katchi sera
+                            <div class="subtitle">Album</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/11.jpg" alt="hukum">
+                            <i class="bi playListPlay bi-play-circle-fill" id="11"></i>
+                        </div>
+                        <h5>
+                            Hukum
+                            <div class="subtitle">Jailer</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/12.jpg" alt="aval">
+                            <i class="bi playListPlay bi-play-circle-fill" id="12"></i>
+                        </div>
+                        <h5>
+                            Aval
+                            <div class="subtitle">Sana</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/13.jpg" alt="kurumugil">
+                            <i class="bi playListPlay bi-play-circle-fill" id="13"></i>
+                        </div>
+                        <h5>
+                            Kurumugil
+                            <div class="subtitle">Sita Ramam</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/14.jpg" alt="mamadhura">
+                            <i class="bi playListPlay bi-play-circle-fill" id="14"></i>
+                        </div>
+                        <h5>
+                            Maamadhura
+                            <div class="subtitle">Jigarthanda</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/15.jpg" alt="hayyoda">
+                            <i class="bi playListPlay bi-play-circle-fill" id="15"></i>
+                        </div>
+                        <h5>
+                            Hayyoda
+                            <div class="subtitle">Jawan</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/16.jpg" alt="kanmani">
+                            <i class="bi playListPlay bi-play-circle-fill" id="16"></i>
+                        </div>
+                        <h5>
+                            Kanmani anbodu
+                            <div class="subtitle">Guna</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/17.jpg" alt="kadhal kappal">
+                            <i class="bi playListPlay bi-play-circle-fill" id="17"></i>
+                        </div>
+                        <h5>
+                            Kadhal kappal
+                            <div class="subtitle">Iraivi</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/18.jpg" alt="mallipoo">
+                            <i class="bi playListPlay bi-play-circle-fill" id="18"></i>
+                        </div>
+                        <h5>
+                            Mallipoo
+                            <div class="subtitle">AR Rahman</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/19.jpg" alt="naan">
+                            <i class="bi playListPlay bi-play-circle-fill" id="19"></i>
+                        </div>
+                        <h5>
+                            Naan
+                            <div class="subtitle">Mahaan</div>
+                        </h5>
+                    </li>
+                    <li class="songItem">
+                        <div class="img_play">
+                            <img src="img/20.jpg" alt="nee partha">
+                            <i class="bi playListPlay bi-play-circle-fill" id="20"></i>
+                        </div>
+                        <h5>
+                            Nee partha
+                            <div class="subtitle">Aniruth</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            
+            <div class="popular_artists">
+                <div class="h4">
+                    <h4>Popular artists</h4>
+                    <div class="btn">
+                        <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                        <i id="right_scrolls" class="bi bi-arrow-right-short"></i> 
+                    </div>
+                </div>
+                <div class="item">
+                    <li>
+                        <a href="https://open.spotify.com/artist/3m49WVMU4zCkaVEKb8kFW7?si=uO8KpHcMQAqVrn860PCaqA" target="_blank"><img src="img/a1.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG?si=7Dmh41OoRqmmxneHMgoe3w" target="_blank"><img src="img/a2.jpg" alt="a2"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/6AiX12wXdXFoGJ2vk8zBjy?si=kA4QWF3RSvmvgbd4vb0uTw" target="_blank"><img src="img/a3.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O?si=YeGawhSFSJKjPgAHeGOP-g" target="_blank"><img src="img/a4.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/29aw5YCdIw2FEXYyAJZI8l?si=XbFi3OLoS66NqOTssEHXhQ" target="_blank"><img src="img/a5.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/5FVBduYaeVBb6JIghza7v6?si=nqHDaO8MQ9Cf3micFKsEyw" target="_blank"><img src="img/a6.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="img/a7.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/2ae6PxICSOZHvjqiCcgon8?si=fJF9wnT_RzSV7zaV1PHPRQ" target="_blank"><img src="img/a8.jpg" alt="a1"></a>
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/0LSPREIgGMZXCuKVel7LVD?si=LuQZTnHfQI2VJ44GzUK0Tw" target="_blank"><img src="img/a9.jpg" alt="a1"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/5Hn84AFwiTEi8eMoI5B9AS?si=qtYI2oNPS1WJJ071_18BGg" target="_blank"><img src="img/a10.jpg" alt="a1"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/0oOet2f43PA68X5RxKobEy?si=fsK9spolT8CGPaHS3AKP3Q" target="_blank"><img src="img/a11.jpg" alt="a1"></a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://open.spotify.com/artist/6CtYzQvENTdGq5LPPsePdV?si=DVtspg2UTReASfXSNDNXow" target="_blank"><img src="img/a12.jpg" alt="a1"></a>
+                        
+                    </li>
+                    
+                    <li>
+                        <a href="https://open.spotify.com/artist/7zAp0JbkavFg2rcMGvANtP?si=ea8c2545712b4bc7" target="_blank"><img src="img/a14.jpg" alt="a14"></a>
+                                            
+                    </li> 
+                    <li>
+                        <a href="https://open.spotify.com/artist/15ClyGUe5g2vllncIC4tp6?si=9abd53f5cc534c4e" target="_blank"><img src="img/a15.jpg" alt="a15"></a>
+                                            
+                    </li> 
+                    <li>
+                        <a href="https://open.spotify.com/artist/15ClyGUe5g2vllncIC4tp6?si=9abd53f5cc534c4e" target="_blank"><img src="img/a16.jpg" alt="a16"></a>
+                                            
+                    </li> 
+                    <!-- <li>
+                        <a href="" target="_blank"><img src="img/a13.jpg" alt="a13"></a>
+                                            
+                    </li>                 modii -->
+                </div>
+            </div>
+            
+        </div>
+
+
+
+        <div class="master_play">
+            <div class="wave">
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+                <div class="wave1"></div>
+            </div>
+            <img src="img/1.jpg" alt="Simbu" id="poster_master_play">
+            <h5 id="title">Beep song <br>
+                <div class="subtitle">Simbu</div>
+            </h5>
+            <div class="icon">
+                <i class="bi bi-skip-start-fill" id="back"></i>
+                <i class="bi bi-play-fill" id="masterPlay"></i>
+                <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+                 <input type="range" id="seek" min="0" value="0" max="100">
+                <div class="bar2" id="bar2"></div>
+                <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+            <div class="vol">
+                <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+                <input type="range" id="vol" min="0" value="0" max="100">
+                <div class="vol_bar"></div>
+                <div class="dot" id="vol_dot"></div>
+            </div>
+        </div>
+    </header>
+
+    
+
+<script src="script.js"></script>
+</body>
+
+</html>
