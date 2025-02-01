@@ -1,32 +1,6 @@
 const music = new Audio()
 // music.play();
 
-// const mongoose=require('mongoose');
-
-// mongoose.connect('mongodb://localhost:27017/musicDB',{userNewUrlParser: true, useUnifiedTopology: true})
-// .then(()=>console.log("connected"))
-// .catch(err =>console.log('error',err));
-// const songSchema = new mongoose.Schema({
-//     title:String,
-//     filePath:String,
-// });
-// const Song = mongoose.model('Song', songSchema);
-// const song=[
-//     {
-//         title: 'song1',
-//         filePath: 'audio/4.mp3'
-//     },
-//     {
-//         title: 'song2',
-//         filePath: 'audio/5.mp3'
-//     },
-
-// ];
-// Song.insertMany(song)
-// .then(()=> console.log('song inserted'))
-// .catch(err=>console.log('error' ,err));
-
-
 const songs =[
     {
         id:'1',
@@ -146,8 +120,14 @@ const songs =[
     {
         id:'20',
         songName: `  Nee partha <br>
-        <div class="subtitle">Aniruth</div>`,
+        <div class="subtitle">Anirudh</div>`,
         poster: "img/20.jpg"
+    },
+    {
+        id:'21',
+        songName: `  Manasilaayo <br>
+        <div class="subtitle">Anirudh</div>`,
+        poster: "img/21.jpg"
     }
    
     // need to add
